@@ -25,6 +25,12 @@ app.get('', (req, res) => {
         name: 'Lithesh Pulikkool'
     })
 })
+app.get('/', (req, res) => {
+    res.render('index', {
+        title: 'Weather',
+        name: 'Lithesh Pulikkool'
+    })
+})
 
 app.get('/about', (req, res) => {
     res.render('about', {
